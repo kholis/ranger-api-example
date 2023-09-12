@@ -1,2 +1,4 @@
 # ranger-api-example
-Various example of Apache Ranger ReST API
+Various example of Apache Ranger REST API
+
+Please rename `ranger-config.sh.tmpl` to `ranger-config.sh` and change properties inside it before running any command.
