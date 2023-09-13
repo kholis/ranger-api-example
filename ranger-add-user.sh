@@ -8,7 +8,7 @@ fi
 . ranger-config.sh
 
 # Create new user
-curl -s -u ${RANGER_USER}:${RANGER_PASSWD} \
+curl -k -u ${RANGER_USER}:${RANGER_PASSWD} \
 	-H "Accept: application/json" \
 	-H "Content-Type: application/json" \
 	-d "{

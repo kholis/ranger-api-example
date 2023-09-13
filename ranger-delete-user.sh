@@ -9,5 +9,5 @@ fi
 
 # Get all users
 if [ $1 != "" ]; then
-  curl -i -v -u ${RANGER_USER}:${RANGER_PASSWD} -X DELETE ${RANGER_URL}/service/xusers/secure/users/id/${userId}?forceDelete=true
+  curl -i -k -u ${RANGER_USER}:${RANGER_PASSWD} -X DELETE ${RANGER_URL}/service/xusers/secure/users/id/${userId}?forceDelete=true
 fi

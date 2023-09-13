@@ -13,7 +13,7 @@ fi
 . ranger-config.sh
 
 # Edit user
-curl -v -i -s -u ${RANGER_USER}:${RANGER_PASSWD} \
+curl -v -i -k -u ${RANGER_USER}:${RANGER_PASSWD} \
 	-H "Accept: application/json" \
 	-H "Content-Type: application/json" \
 	-d @${file_json} \
